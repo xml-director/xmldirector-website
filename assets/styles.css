@@ -109,6 +109,10 @@ ul.references {
     text-align: justify;
 }
 
+iframe.videos {
+    border: null;
+}
+
 @media(max-width:850px){
 #claims-intro {
 	font-size: 1.8em;
