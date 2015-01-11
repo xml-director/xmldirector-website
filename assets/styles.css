@@ -1,0 +1,259 @@
+p, ul {
+    font-size: 1.1em;
+}
+
+h4 {
+    color: #264777 !important;
+}
+
+.row a {
+    color: #888;
+    font-weight: 450;
+}
+
+#footer .logo {
+    width: 250px;
+}
+
+img.social-media {
+    max-width: 75px;
+    width: 75px;
+}
+
+#social-media li {
+    display: inline-block;
+}
+
+.thumbnail {
+    border: 0;
+}
+
+img#andreas-jung {
+    width: 200px;
+}
+
+img#site-logo {
+    width: 200px;
+}
+
+.one-column {
+    margin-top: 1em;
+}
+
+.two-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    margin-top: 1em;
+}
+
+.three-columns {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    margin-top: 1em;
+}
+
+#basex-logo,
+#plone-logo,
+#existdb-logo {
+    width: 300px;
+}
+
+ul.references {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.references li {
+    display: inline-block;
+}
+
+
+.references img {
+    max-width: 200px;
+    min-width: 150px;
+    padding-left: 10px;
+    padding-right: 30px;
+    display: inline-block;
+}                     
+
+.feature-images {
+}
+
+.feature-images img:first-child {
+}
+
+.feature-image {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#intro {
+	min-height: 745px !important;
+	background: #008cba url(backgrounds/intro_bg.jpg) no-repeat center center !important;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+#logo-intro {
+    position: relative;
+    top: 200px;
+    text-align: left;
+}
+
+#claims-intro {
+    color: white;
+    font-size: 2.5em;
+    margin-top: 2em;
+}
+
+.hyphenate {
+    text-align: justify;
+}
+
+@media(max-width:850px){
+#claims-intro {
+	font-size: 1.8em;
+}
+}
+
+
+@media(max-width:520px){
+#claims-intro {
+	font-size: 1.4em;
+}
+}
+
+
+/*------newly added css------*/
+.skrollable .navbar-brand{
+	transition: all .5s linear;
+	-moz-transition: all .5s linear;
+	-o-transition: all .5s linear;
+	-webkit-transition: all .5s linear;
+}
+#intro{
+	background-size:cover !important;
+}
+
+
+
+/*------newly added css------*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+#works .three-columns {
+	padding:0;
+	margin-left:20px;
+}
+#works .three-columns li{
+	position:relative;
+	padding:0 0 0 20px;
+}
+#works .three-columns li:before{
+	position:absolute;
+	left:0;
+	top:7px;
+	content:'';
+	width:6px;
+	height:6px;
+	background:#25272b;
+	overflow-x:visible;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-o-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+.two-columns li{
+	position:relative;
+	padding:0 0 0 20px;
+}
+.two-columns li:before{
+	position:absolute;
+	left:0;
+	top:7px;
+	content:'';
+	width:6px;
+	height:6px;
+	background:#25272b;
+	overflow-x:visible;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-o-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+}
+
+@media (max-width:991px){
+.navbar ul li a {
+    font-size: 12px;
+    padding: 15px 7px;
+}	
+.divide iframe{
+	width:100%;
+	height:auto;
+	min-height:300px;
+}
+}
+@media (min-width:768px){
+.skrollable-between .navbar-brand{
+    opacity: 0;
+    filter: alpha(opacity=0); 
+}
+.skrollable-after .navbar-brand{
+    opacity: 1;
+    filter: alpha(opacity=100); 
+	padding:6px 15px 0;
+}	
+}
+@media (max-width:767px){
+.navbar{
+	background:rgba(255,255,255,.8) !important;
+	padding:0 !important;
+}
+.navbar-toggle{
+	padding:0;
+	top:5px;
+	border:none;
+	z-index:99999;
+	height:auto;
+}
+.navbar-toggle .icon-bar{
+	height:3px;
+	background:#041852 !important;
+}
+#logo-intro {
+    margin: 200px 0 40px;
+    position: relative;
+    text-align: left;
+    top: auto;
+}
+.navbar ul li a {
+    color: #555 !important;
+    font-size: 14px;
+    padding: 8px 7px;
+}
+.navbar ul li a:hover,
+.navbar ul li.active a {
+    color: #fff !important;
+	background:#1451aa !important;
+}
+.navbar-brand{
+	padding:6px 15px 0 !important;
+}	
+}
+
+/*-------new css at 1/1/2015--------*/
+.common-banner{
+	padding:90px 0;
+	background:url(new-uniquebg.jpg) 0 0 no-repeat;
+	background-size:cover;
+}
+.common-banner2{
+	padding:90px 0;
+	background:url(alternative-banner.jpg) 0 0 no-repeat;
+	background-size:cover;
+}
+#references,
+#references,
+#availability,
+#developer{
+	padding-bottom:30px;
+}
+/*-------new css at 1/1/2015--------*/
