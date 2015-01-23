@@ -36,6 +36,10 @@ img#site-logo {
     width: 200px;
 }
 
+pre {
+    margin-top: 1em;
+}
+
 .one-column {
     margin-top: 1em;
 }
@@ -102,7 +106,14 @@ ul.references {
 #claims-intro {
     color: #d4042e;
     font-size: 2.5em;
+    font-weight: 550;
     margin-top: 2em;
+    list-style-type: none;
+}
+
+
+#claims-intro li:before {
+    content: "\00BB \0020";
 }
 
 .hyphenate {
