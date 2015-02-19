@@ -831,8 +831,11 @@
 				<div class="row">
 					<div class="col-sm-6 divide">
 
-                    <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/XMLDirector" data-widget-id="568321774237257728">Tweets by @XMLDirector</a>
-                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                        <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/XMLDirector" data-widget-id="568321774237257728">Tweets by @XMLDirector</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				    </div>
+					<div class="col-sm-6 divide">
+                        <div id="mailchimp-rss"></div>
 				    </div>
 				</div>
 			</div>
@@ -928,6 +931,7 @@
 		<script src="js/jquery.flowuplabels.js"></script>
 	<!-- custom scripts and triggers -->
 		<script src="js/custom.js"></script>
+        <script src="assets/jquery.rss.min.js"></script>
 	<!-- Google analytics -->
 		<script type="text/javascript">
 			var _gaq = _gaq || [];
@@ -941,7 +945,11 @@
 			})();
 		</script>
     <!-- browser-update.org -->
+    <!-- RSS https://github.com/sdepold/jquery-rss -->
         <script> 
+
+        $('#mailchimp-rss').rss('https://xml-director.info/mailchimp-rss');
+
         var $buoop = {vs:{i:9,f:25,o:15,s:6},c:2}; 
         function $buo_f(){ 
              var e = document.createElement("script"); 
@@ -951,6 +959,7 @@
         try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
         catch(e){window.attachEvent("onload", $buo_f)}
         </script> 
+
 	<!--end scripts-->
         
 	</body>
