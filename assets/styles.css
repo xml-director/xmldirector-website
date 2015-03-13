@@ -311,3 +311,29 @@ iframe.videos {
     padding-left: 26px;
     position: relative;
 }
+                            
+#xml-intro {
+    position: absolute; 
+    top: 0px; 
+    right: 0; 
+    width: 630px; 
+    font-size: 1.1em;
+    border: 1px solid red; 
+    background: #fff; 
+    color: black; 
+    height: 420px; 
+    opacity: 0.7; 
+    border-radius: 20px; 
+    padding: 1em;
+}
+
+@media (max-width:1500px){
+   #xml-intro {
+       display: none;
+    }
+}
+
+.tag {
+    color: orange;
+    font-weight: bold;
+}
