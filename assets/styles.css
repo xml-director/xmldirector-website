@@ -281,3 +281,33 @@ iframe.videos {
 #works #feature-matrix {
     margin-bottom: 0.5em;
 }
+
+
+#intro{
+    background-size:cover !important;
+}
+#logo-intro img{
+    max-width:550px
+}
+
+#claims-intro {
+    padding-left:0;
+    margin-top: 45px;
+    list-style:none;
+}
+
+#claims-intro li:before { 
+    content:"» ";   
+    left: 4px;
+    position: absolute;
+    top: -1px;
+}
+
+#claims-intro li {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 14px;
+    padding-left: 26px;
+    position: relative;
+}
