@@ -105,7 +105,7 @@ ul.references {
 
 #claims-intro {
     color: #d4042e;
-    font-size: 2.5em;
+    font-size: 2.0em;
     font-weight: 550;
     margin-top: 2em;
     list-style-type: none;
@@ -139,6 +139,35 @@ iframe.videos {
 #claims-intro {
 	font-size: 1.4em;
 }
+}
+
+#release-info {
+    margin-top: 2em;
+}
+
+
+#release-info ul {
+    font-size: 1.3em; 
+    list-style-type: none;
+}
+
+#release-info ul li {
+    display: inline;
+    margin-right: 2em;
+}
+
+#release-info ul li:before {
+    content: '\00bb';
+    color: white;
+}
+
+#release-info ul li a{
+    color: white;
+}
+
+#release-info ul li a:hover {
+    color: red;
+    border-bottom: 1px solid red;
 }
 
 
