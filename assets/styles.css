@@ -128,19 +128,6 @@ iframe.videos {
     font-size: 16px !important;
 }
 
-@media(max-width:850px){
-#claims-intro {
-	font-size: 1.8em;
-}
-}
-
-
-@media(max-width:520px){
-#claims-intro {
-	font-size: 1.4em;
-}
-}
-
 #release-info {
     margin-top: 2em;
 }
@@ -366,3 +353,31 @@ iframe.videos {
     color: orange;
     font-weight: bold;
 }
+
+@media(max-width:850px){
+    #claims-intro  li {
+        font-size: 0.8em;
+    }
+    #release-info ul li {
+        display: block;
+    }
+    #logo-intro img {
+        width: 100%;
+    }
+}
+
+
+@media(max-width:520px){
+    #claims-intro li {
+        font-size: 0.6em;
+    }
+
+    #logo-intro img {
+        width: 100%;
+    }
+
+    #release-info ul li {
+        display: block;
+    }
+}
+
