@@ -134,18 +134,21 @@ iframe.videos {
 
 
 #release-info ul {
-    font-size: 1.3em; 
+    font-size: 1.2em; 
     list-style-type: none;
 }
 
 #release-info ul li {
-    display: inline;
-    margin-right: 2em;
+    display: block;
+    margin-right: 1.5em;
+    float: left;
+    max-width: 30%;
 }
 
 #release-info ul li:before {
-    content: '\00bb';
     color: white;
+    padding-left: -1em;
+    position: relative;
 }
 
 #release-info ul li a{
