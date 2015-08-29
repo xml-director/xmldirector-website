@@ -143,6 +143,7 @@ iframe.videos {
     margin-right: 1.5em;
     float: left;
     max-width: 30%;
+    margin-bottom: 0.5em;
 }
 
 #release-info ul li:before {
