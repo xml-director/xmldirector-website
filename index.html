@@ -1,1306 +1,523 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<!-- set the title of you site -->
-        <title>XML Content Management System / XML-Director / The open-source XML content management system CMS</title>
-        <meta name="keywords" content="xml,plone,cms,pdf,docx,epub, publishing" />
-        <meta name="description" content="A XML content management system based on the CMS Plone for XML content, DOCX to XML conversion and high-quality PDF production, EPUB support. Enterprise CMS. "/>
-		<!-- encoding -->
-		<meta charset="utf-8">
-		<!-- responsiveness, scaling... -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<!-- set author of your site -->
-		<meta name="author" content="Andreas Jung, ZOPYX">
-		<!-- IE compatibility modes -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<!-- modernizr -->
-		<script src="js/modernizr.js"></script>
-		<!-- main Bootstrap styling -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="assets/styles.css">
-		<!-- custom styling -->
-		<link href="css/style.css" rel="stylesheet">
-		<!-- iconic font - FontAwesome -->
-		<link href="css/font-awesome.css" rel="stylesheet">
-		<!-- Google font -->
-		<link href="css/fonts.css" rel="stylesheet">
-		<!-- site thumbnail -->
-		<link rel="image_src" href="thumbnail.png" />
-		<!-- favicon -->
-		<link rel="icon" type="image/ico" href="favicon.ico">
-		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries. All other JS at the end of file. -->
-		<!-- [if lt IE 9]>
-			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-			<script src="js/respond.min.js"></script>
-		<![endif]-->
-        <script type="text/javascript" src="assets/hyphenator/Hyphenator.js"></script>
-        <meta property="og:site_name" content="XML-Director" />
-        <meta property="og:image" content="assets/xml-director-logo.png" />
-        <meta property="og:url" content="https://xml-director.info" />
-        <meta property="og:description" content="A XML content management system based on the CMS Plone for XML content, DOCX to XML conversion and high-quality PDF production, EPUB support. Enterprise CMS. "/>
-	</head>
-	<body data-spy="scroll" data-target=".navbar" data-offset="61">
-		<div class="preloader">
-			<div class="spinner">
-				<div class="bounce1"></div>
-				<div class="bounce2"></div>
-				<div class="bounce3"></div>
-			</div>
-		</div>
-	<!--start navigation-->
-		<div class="navbar navbar-default navbar-fixed-top" role="navigation" data-start="background: rgba(255, 255, 255, .0); padding: 20px 0px;" data-90p="background: rgba(255, 255, 255, 1); padding: 5px 0px;">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#intro">
-						<img src="assets/xml-director-logo.svg" class="img-responsive" id="site-logo" alt="XML-Director Logo">
-					</a>
-				</div>
-				<div class="collapse navbar-collapse" id="navbar-collapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#intro" data-start="color: rgb(255, 255, 255);" data-90p="color: rgb(37, 39, 43);">Home</a></li>
-						<li><a href="#overview" data-start="color: rgb(255, 255, 255);" data-90p="color: rgb(37, 39, 43);">Overview</a></li>
-						<li><a href="#works-top" data-start="color: rgb(255, 255, 255);" data-90p="color: rgb(37, 39, 43);">Features</a></li>
-						<li><a href="#gallery-top-anchor" data-start="color: rgb(255, 255, 255);" data-90p="color: rgb(37, 39, 43);">Media</a></li>
-						<li><a href="#references" data-start="color: rgb(255, 255, 255);" data-90p="color: rgb(37, 39, 43);">References</a></li>
-						<li><a href="#availability" data-start="color: rgb(255, 255, 255);" data-90p="color: rgb(37, 39, 43);">Get it!</a></li>
-						<li><a href="#developer" data-start="color: rgb(255, 255, 255);" data-90p="color: rgb(37, 39, 43);">Developer</a></li>
-						<li><a href="#partners" data-start="color: rgb(255, 255, 255);" data-90p="color: rgb(37, 39, 43);">Partners</a></li>
-						<li><a href="#team-top" data-start="color: rgb(255, 255, 255);" data-90p="color: rgb(37, 39, 43);">About </a></li>
-						<li><a href="#footer" data-start="color: rgb(255, 255, 255);" data-90p="color: rgb(37, 39, 43);">Contact</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<section id="intro" data-start="background-position: 50% 0px;" data-90p="background-position: 50% 200px">
-			<div class="container-fluid text-center">
-				<div class="row">
-                    <div class="col-xs-10 col-xs-offset-1">
-                        <div id="logo-intro">
-                            <img  class="img-responsive" src="assets/xml-director-logo-inverted.svg" alt="XML-Director Logo"/>
-                            <ul id="claims-intro">
-                                <li>Enterprise XML Content Management</li>
-                                <li>Unified XML Workflows</li>
-                                <li>Single-Source Multi-Channel Publishing</li>
-                                <li>DOCX&rarr;XML Conversion &amp; Import</li>
-                                <li>High-Quality PDF Generation</li>
-                                <li>Open Architecture &bull; Open-Source</li>
-                            </ul>
-                            <pre id="xml-intro">
-&lt;?xml version="1.0"?&gt;
-&lt;<span class="tag">cms</span>&gt;
-    &lt;<span class="tag">title</span>&gt;XML-Director&lt;<span class="tag">/title</span>&gt;
-    &lt;<span class="tag">ingredients</span>&gt;
-        &lt;<span class="tag">item</span>&gt;Plone CMS&lt;<span class="tag">/item</span>&gt;
-        &lt;<span class="tag">item</span>&gt;eXist-db&lt;<span class="tag">/item</span>&gt;
-        &lt;<span class="tag">item</span>&gt;Plone CMS&lt;<span class="tag">/item</span>&gt;
-        &lt;<span class="tag">item</span>&gt;BaseX&lt;<span class="tag">/item</span>&gt;
-    &lt;<span class="tag">/ingredients</span>&gt;
-    &lt;<span class="tag">features</span>&gt;
-        &lt;<span class="tag">item</span>&gt;Custom content-types&lt;<span class="tag">/item</span>&gt;
-        &lt;<span class="tag">item</span>&gt;Workflows&lt;<span class="tag">/item</span>&gt;
-        &lt;<span class="tag">item</span>&gt;Fine-grain roles and access management&lt;<span class="tag">/item</span>&gt;
-        &lt;<span class="tag">item</span>&gt;Decent XML technology support&lt;<span class="tag">/item</span>&gt;
-        &lt;<span class="tag">much-more-features/</span>&gt;
-    &lt;<span class="tag">/features</span>&gt;
-&lt;<span class="tag">/cms</span>&gt;
-                            </pre>
-                            <div id="release-info">
-                                <ul>
-                                    <li>
-                                        <a href="#references"> onkopedia.com case study available </a>
-                                    </li>
-                                    <li>
-                                        <a href="#availability"> XML-Director V 2.0 released</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.onkopedia.com"> Medicial guideline portal <b>Onkopedia</b> launched on top of XML-Director</a>
-                                    </li>
-                                </ul>
-
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>XML-Director — Unified XML Content Workflows</title>
+    <meta name="keywords" content="xml,plone,cms,pdf,docx,epub,publishing">
+    <meta name="description" content="XML-Director provides DOCX to XML workflows, PDF publishing, and developer tooling powered by Plone and Flowbite.">
+    <meta name="author" content="Andreas Jung, ZOPYX">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:site_name" content="XML-Director">
+    <meta property="og:image" content="assets/xml-director-logo.png">
+    <meta property="og:url" content="https://xml-director.info">
+    <meta property="og:description" content="XML-Director unifies XML content management, DOCX conversion, and multi-channel publishing.">
+    <link rel="icon" type="image/ico" href="favicon.ico">
+    <link rel="image_src" href="thumbnail.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif']
+                    },
+                    colors: {
+                        brand: {
+                            DEFAULT: '#2d68ff',
+                            dark: '#1e3a8a'
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css">
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased">
+    <header id="intro" class="relative isolate overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 text-white">
+        <div class="absolute inset-x-0 top-0 -z-10 mx-auto max-w-6xl opacity-10 blur-3xl">
+            <img src="assets/new-uniquebg.jpg" alt="Background texture" class="h-full w-full object-cover">
+        </div>
+        <nav class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-slate-950/70 backdrop-blur">
+            <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between px-4 py-3 lg:px-6">
+                <a href="#intro" class="flex items-center gap-3 text-white">
+                    <img src="assets/xml-director-logo.svg" alt="XML-Director" class="h-10 w-10">
+                    <span class="text-lg font-semibold tracking-tight">XML-Director</span>
+                </a>
+                <div class="flex items-center gap-3">
+                    <a href="#availability" class="hidden rounded-full bg-brand px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-brand/30 transition hover:bg-brand-dark md:inline-flex">Get XML-Director</a>
+                    <button data-collapse-toggle="main-menu" type="button" class="inline-flex h-10 w-10 items-center justify-center rounded-md border border-white/20 text-sm text-white md:hidden" aria-controls="main-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden w-full md:block md:w-auto" id="main-menu">
+                    <ul class="mt-4 flex flex-col gap-2 rounded-lg border border-white/10 bg-slate-900/80 p-4 text-sm font-semibold md:mt-0 md:flex-row md:border-0 md:bg-transparent md:p-0 md:text-white">
+                        <li><a href="#overview" class="block rounded px-3 py-2 hover:bg-white/10">Overview</a></li>
+                        <li><a href="#features" class="block rounded px-3 py-2 hover:bg-white/10">Features</a></li>
+                        <li><a href="#feature-matrix" class="block rounded px-3 py-2 hover:bg-white/10">Capabilities</a></li>
+                        <li><a href="#media" class="block rounded px-3 py-2 hover:bg-white/10">Media</a></li>
+                        <li><a href="#references" class="block rounded px-3 py-2 hover:bg-white/10">References</a></li>
+                        <li><a href="#availability" class="block rounded px-3 py-2 hover:bg-white/10">Get It</a></li>
+                        <li><a href="#developer" class="block rounded px-3 py-2 hover:bg-white/10">Developer</a></li>
+                        <li><a href="#partners" class="block rounded px-3 py-2 hover:bg-white/10">Partners</a></li>
+                        <li><a href="#about" class="block rounded px-3 py-2 hover:bg-white/10">About</a></li>
+                        <li><a href="#contact" class="block rounded px-3 py-2 hover:bg-white/10">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="relative mx-auto flex max-w-6xl flex-col gap-12 px-6 pb-32 pt-32 lg:flex-row lg:items-center lg:gap-16 lg:px-8">
+            <div class="space-y-6 lg:w-1/2">
+                <p class="text-xs font-semibold uppercase tracking-[0.3em] text-brand">Flowbite refreshed design</p>
+                <h1 class="text-4xl font-bold leading-tight text-white sm:text-5xl">Unified XML workflows for DOCX, PDF, EPUB, and the Web</h1>
+                <p class="text-lg text-slate-200">XML-Director connects Word manuscripts, Plone, XML databases, and high-quality print output through a single Flowbite-powered interface. Convert DOCX to XML, manage versions, and deliver precise layouts without vendor lock-in.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#availability" class="inline-flex items-center justify-center rounded-full bg-brand px-6 py-3 font-semibold text-white shadow-lg shadow-brand/40 transition hover:bg-brand-dark">Download & Install</a>
+                    <a href="#developer" class="inline-flex items-center justify-center rounded-full border border-white/40 px-6 py-3 font-semibold text-white hover:bg-white/10">Developer docs</a>
+                    <a href="mailto:info@xml-director.info" class="inline-flex items-center justify-center rounded-full border border-white/40 px-6 py-3 font-semibold text-white hover:bg-white/10">Talk to us</a>
+                </div>
+                <dl class="grid gap-6 sm:grid-cols-3">
+                    <div>
+                        <dt class="text-sm text-white/70">Formats synchronized</dt>
+                        <dd class="text-3xl font-semibold">DOCX ↔ XML</dd>
+                    </div>
+                    <div>
+                        <dt class="text-sm text-white/70">PDF renderers supported</dt>
+                        <dd class="text-3xl font-semibold">4+</dd>
+                    </div>
+                    <div>
+                        <dt class="text-sm text-white/70">Storage connectors</dt>
+                        <dd class="text-3xl font-semibold">7</dd>
+                    </div>
+                </dl>
+            </div>
+            <div class="lg:w-1/2">
+                <div class="rounded-3xl border border-white/10 bg-white/10 p-6 shadow-2xl shadow-black/40 backdrop-blur">
+                    <p class="text-sm font-semibold uppercase tracking-[0.3em] text-white/70">Why teams switch</p>
+                    <h2 class="mt-3 text-2xl font-bold text-white">Single-source publishing with Flowbite polish</h2>
+                    <ul class="mt-4 space-y-3 text-sm text-white/80">
+                        <li class="flex items-start gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-emerald-400"></span>Through-the-web configuration of content types, workflows, and validation rules.</li>
+                        <li class="flex items-start gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-orange-400"></span>Round-tripping DOCX ↔ XML powered by the C-REX conversion service.</li>
+                        <li class="flex items-start gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-sky-400"></span>High-quality PDF layouts using PDFreactor, PrinceXML, Antennahouse, or Vivliostyle.</li>
+                        <li class="flex items-start gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-violet-400"></span>Connect Plone to BaseX, eXist-db, OwnCloud, Dropbox, S3, and local storage.</li>
+                    </ul>
+                    <div class="mt-6 rounded-2xl bg-white/10 p-4 text-sm text-white/80">
+                        <p class="font-semibold text-white">"XML-Director shrank our publishing cycle from weeks to hours without compromising print quality."</p>
+                        <p class="mt-2 text-white/70">— XML-Director customer feedback</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-white/10 bg-white/5 px-6 py-4">
+            <div class="mx-auto flex max-w-6xl flex-wrap items-center gap-6 opacity-80">
+                <span class="text-sm uppercase tracking-[0.3em]">Works with</span>
+                <img src="assets/plone-logo.svg" alt="Plone" class="h-8">
+                <img src="assets/basex.svg" alt="BaseX" class="h-8">
+                <img src="assets/existdb.svg" alt="eXist-db" class="h-8">
+                <img src="assets/xml-director-logo-inverted.svg" alt="XML-Director icon" class="h-8">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="overview" class="py-20">
+            <div class="mx-auto max-w-6xl px-6 lg:px-8">
+                <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+                    <div class="space-y-6">
+                        <p class="text-sm font-semibold uppercase tracking-[0.3em] text-brand">Overview</p>
+                        <h2 class="text-3xl font-bold text-slate-900">Keep every step of your XML production pipeline visible.</h2>
+                        <p class="text-lg text-slate-600">XML-Director provides a unified, Flowbite-styled interface for technical documentation teams, guideline authors, laboratories, and publishers who demand a predictable XML workflow.</p>
+                        <ul class="space-y-3 text-base leading-relaxed text-slate-600">
+                            <li>Conversion of DOCX → XML → DOCX with full round-tripping for approved templates.</li>
+                            <li>Publish XML content as HTML, PDF, and EPUB with consistent branding.</li>
+                            <li>Distribute generated assets to the web, print, or regulatory portals.</li>
+                            <li>Track versions, approvals, and QA feedback directly inside Plone.</li>
+                        </ul>
+                        <div>
+                            <h3 class="text-lg font-semibold text-slate-900">Popular use cases</h3>
+                            <p class="text-slate-600">Fiction, manuals, SOPs, quality documentation, and technical literature all benefit from the same workflow.</p>
+                        </div>
+                    </div>
+                    <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-xl">
+                        <div class="flex items-center gap-4">
+                            <div class="rounded-2xl bg-slate-900/5 p-3">
+                                <svg class="h-8 w-8 text-brand" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3 9m0 0l3-3M3 9h13a6 6 0 010 12H6" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold uppercase tracking-[0.3em] text-slate-500">Unified workflow</p>
+                                <p class="text-2xl font-bold text-slate-900">Manuscript → XML → Publish</p>
+                            </div>
+                        </div>
+                        <p class="mt-6 text-slate-600">Upload manuscripts, convert them to XML, run validation, generate PDF & EPUB, and publish across channels from a single dashboard.</p>
+                        <img src="assets/unified-xml-workflows.png" alt="Unified workflow diagram" class="mt-6 w-full rounded-2xl border border-dashed border-slate-200 bg-slate-50 p-6">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="features" class="border-y border-slate-200 bg-white py-20">
+            <div class="mx-auto max-w-6xl px-6 lg:px-8">
+                <div class="mb-12 space-y-4 text-center">
+                    <p class="text-sm font-semibold uppercase tracking-[0.3em] text-brand">Feature Highlights</p>
+                    <h2 class="text-3xl font-bold text-slate-900">Flowbite cards that map directly to your publishing workflow.</h2>
+                    <p class="text-slate-600">Every capability from the classic XML-Director site is still here, now refreshed with Tailwind + Flowbite components.</p>
+                </div>
+                <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                    <article class="flex h-full flex-col rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
+                        <img src="assets/docx2xml.png" alt="DOCX to XML" class="h-40 w-full rounded-2xl object-contain">
+                        <h3 class="mt-6 text-xl font-semibold text-slate-900">DOCX ↔ XML conversion</h3>
+                        <p class="mt-3 text-sm leading-relaxed text-slate-600">Convert Word manuscripts to Docbook or DITA, validate them, publish HTML previews, and regenerate DOCX through the C-REX-powered round trip.</p>
+                    </article>
+                    <article class="flex h-full flex-col rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
+                        <img src="assets/xml-workflows.png" alt="XML workflows" class="h-40 w-full rounded-2xl object-contain">
+                        <h3 class="mt-6 text-xl font-semibold text-slate-900">XML publication workflows</h3>
+                        <p class="mt-3 text-sm leading-relaxed text-slate-600">Manage uploads, conversions, QA gates, and distribution with role-based permissions and workflow definitions tailored per content type.</p>
+                    </article>
+                    <article class="flex h-full flex-col rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
+                        <img src="assets/pdf-layouts.png" alt="PDF layouts" class="h-40 w-full rounded-2xl object-contain">
+                        <h3 class="mt-6 text-xl font-semibold text-slate-900">High quality PDF layouts</h3>
+                        <p class="mt-3 text-sm leading-relaxed text-slate-600">Drive PDFreactor, PrinceXML, Antennahouse, or Vivliostyle with CSS, XSL-FO, or hybrid styling to deliver press-ready output that matches your brand.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="workflow" class="py-20">
+            <div class="mx-auto max-w-6xl px-6 lg:px-8">
+                <div class="mb-12 space-y-4 text-center">
+                    <p class="text-sm font-semibold uppercase tracking-[0.3em] text-brand">Workflow</p>
+                    <h2 class="text-3xl font-bold text-slate-900">From manuscript to web and print.</h2>
+                    <p class="text-slate-600">Flowbite's timeline component visualizes the actual XML-Director pipeline.</p>
+                </div>
+                <ol class="relative border-s border-slate-200">
+                    <li class="mb-10 ms-6">
+                        <span class="absolute -start-2.5 flex h-5 w-5 items-center justify-center rounded-full border border-white bg-brand text-white"></span>
+                        <h3 class="text-xl font-semibold text-slate-900">Upload & prepare content</h3>
+                        <p class="text-slate-600">Drag DOCX manuscripts or XML collections into Plone, assign metadata, and pick the right workflow template.</p>
+                    </li>
+                    <li class="mb-10 ms-6">
+                        <span class="absolute -start-2.5 flex h-5 w-5 items-center justify-center rounded-full border border-white bg-brand/70 text-white"></span>
+                        <h3 class="text-xl font-semibold text-slate-900">Convert & validate</h3>
+                        <p class="text-slate-600">C-REX, LibreOffice/unoconv, and custom converters map content to Docbook, DITA, or bespoke schemas while Schematron, Relax NG, XML Schema, and DTD validation guard quality.</p>
+                    </li>
+                    <li class="mb-10 ms-6">
+                        <span class="absolute -start-2.5 flex h-5 w-5 items-center justify-center rounded-full border border-white bg-brand/60 text-white"></span>
+                        <h3 class="text-xl font-semibold text-slate-900">Publish</h3>
+                        <p class="text-slate-600">Use XSLT pipelines plus CSS Paged Media to produce responsive HTML, EPUB, or high-end PDFs and push them to BaseX, eXist-db, OwnCloud, Dropbox, Amazon S3, or local storage.</p>
+                    </li>
+                    <li class="ms-6">
+                        <span class="absolute -start-2.5 flex h-5 w-5 items-center justify-center rounded-full border border-white bg-brand/40 text-white"></span>
+                        <h3 class="text-xl font-semibold text-slate-900">Distribute & iterate</h3>
+                        <p class="text-slate-600">Trigger social posts, update documentation portals, or send regulatory packages; every change stays versioned and auditable.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <section id="feature-matrix" class="border-y border-slate-200 bg-slate-900 py-20 text-white">
+            <div class="mx-auto max-w-6xl px-6 lg:px-8">
+                <div class="mb-12 space-y-4 text-center">
+                    <p class="text-sm font-semibold uppercase tracking-[0.3em] text-brand">Capability matrix</p>
+                    <h2 class="text-3xl font-bold">What ships out of the box</h2>
+                    <p class="text-white/70">The classic feature matrix is distilled into easy-to-scan Flowbite cards.</p>
+                </div>
+                <div class="grid gap-6 lg:grid-cols-2">
+                    <article class="rounded-3xl border border-white/10 bg-white/5 p-6">
+                        <h3 class="text-xl font-semibold">Validation engines</h3>
+                        <ul class="mt-4 space-y-2 text-white/80">
+                            <li>✔ Schematron</li>
+                            <li>✔ Relax NG</li>
+                            <li>✔ XML Schema</li>
+                            <li>✔ DTD</li>
+                        </ul>
+                    </article>
+                    <article class="rounded-3xl border border-white/10 bg-white/5 p-6">
+                        <h3 class="text-xl font-semibold">Transformations</h3>
+                        <ul class="mt-4 space-y-2 text-white/80">
+                            <li>✔ XSLT 1 / XSLT 3</li>
+                            <li>✔ Python processors</li>
+                            <li>✔ Multi-step pipelines</li>
+                            <li>✔ REST hooks for custom converters</li>
+                        </ul>
+                    </article>
+                    <article class="rounded-3xl border border-white/10 bg-white/5 p-6">
+                        <h3 class="text-xl font-semibold">Storage connectors</h3>
+                        <ul class="mt-4 space-y-2 text-white/80">
+                            <li>✔ BaseX ≥ 8.2</li>
+                            <li>✔ eXist-db ≥ 2.2</li>
+                            <li>✔ OwnCloud, Alfresco, Dropbox</li>
+                            <li>✔ Amazon S3 & local filesystem</li>
+                            <li>○ Google Drive (planned)</li>
+                        </ul>
+                    </article>
+                    <article class="rounded-3xl border border-white/10 bg-white/5 p-6">
+                        <h3 class="text-xl font-semibold">Platform extras</h3>
+                        <ul class="mt-4 space-y-2 text-white/80">
+                            <li>✔ Through-the-web content types</li>
+                            <li>✔ Programmatic content types</li>
+                            <li>✔ Social media integration (Twitter, Facebook)</li>
+                            <li>✔ Workflows per content type & granular security</li>
+                            <li>✔ Shared locks, REST API, planned exclusive locks</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="media" class="py-20">
+            <div class="mx-auto max-w-6xl px-6 lg:px-8">
+                <div class="mb-12 space-y-4 text-center">
+                    <p class="text-sm font-semibold uppercase tracking-[0.3em] text-brand">Media & demos</p>
+                    <h2 class="text-3xl font-bold text-slate-900">See XML-Director in action</h2>
+                    <p class="text-slate-600">Screenshots and screencasts show how Flowbite styling modernizes the original UI.</p>
+                </div>
+                <div class="grid gap-6 md:grid-cols-3">
+                    <figure class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+                        <img src="assets/plone-5-screen.png" alt="Plone UI" class="h-64 w-full object-cover">
+                        <figcaption class="p-4 text-sm text-slate-600">Plone-based editorial UI with live previews.</figcaption>
+                    </figure>
+                    <figure class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+                        <img src="assets/web2print.png" alt="Web to print" class="h-64 w-full object-cover">
+                        <figcaption class="p-4 text-sm text-slate-600">Web-to-print controls powered by CSS Paged Media.</figcaption>
+                    </figure>
+                    <figure class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+                        <img src="assets/usecases.png" alt="Use cases" class="h-64 w-full object-cover">
+                        <figcaption class="p-4 text-sm text-slate-600">Business use cases for regulated content teams.</figcaption>
+                    </figure>
+                </div>
+                <div class="mt-8 text-center text-sm text-slate-600">
+                    <a href="http://web2print.zopyx.com" class="font-semibold text-brand hover:text-brand-dark">Try the Web-to-Print demo</a> · <a href="https://www.youtube.com/watch?v=rYoXVM0-BWc" class="font-semibold text-brand hover:text-brand-dark">Watch the screencast</a>
+                </div>
+            </div>
+        </section>
+        <section id="references" class="border-y border-slate-200 bg-slate-900 py-20 text-white">
+            <div class="mx-auto max-w-6xl px-6 lg:px-8">
+                <div class="mb-10 space-y-4 text-center">
+                    <p class="text-sm font-semibold uppercase tracking-[0.3em] text-brand">References</p>
+                    <h2 class="text-3xl font-bold">Trusted publishing partner</h2>
+                    <p class="text-white/70">ZOPYX has implemented XML-Director and Produce &amp; Publish solutions for customers worldwide.</p>
+                </div>
+                <div class="grid gap-6 md:grid-cols-5">
+                    <a href="http://www.york.cuny.edu" class="flex items-center justify-center rounded-2xl border border-white/10 bg-white/5 p-4"><img src="assets/references/york.png" alt="York College" class="max-h-16"></a>
+                    <a href="https://veit-schiele.de" class="flex items-center justify-center rounded-2xl border border-white/10 bg-white/5 p-4"><img src="assets/references/vs.jpg" alt="Veit Schiele Communications" class="max-h-16"></a>
+                    <a href="https://www.locandy.com" class="flex items-center justify-center rounded-2xl border border-white/10 bg-white/5 p-4"><img src="assets/references/locandy.png" alt="Locandy" class="max-h-16"></a>
+                    <a href="http://www.onkopedia-guidelines.info" class="flex items-center justify-center rounded-2xl border border-white/10 bg-white/5 p-4"><img src="assets/references/dgho.png" alt="DGHO" class="max-h-16"></a>
+                    <a href="https://www.osha.gov" class="flex items-center justify-center rounded-2xl border border-white/10 bg-white/5 p-4"><img src="assets/references/osha.jpg" alt="OSHA" class="max-h-16"></a>
+                </div>
+                <div class="mt-8 space-y-2 text-center text-sm text-white/80">
+                    <a href="https://www.produce-and-publish.com/showcase/references" class="underline">See the Produce &amp; Publish showcase</a>
+                    <p><a href="files/Onkopedia-EN.pdf" class="underline">Onkopedia case study (EN)</a> · <a href="files/Onkopedia-DE.pdf" class="underline">Fallstudie (DE)</a></p>
+                </div>
+            </div>
+        </section>
+        <section id="availability" class="py-20">
+            <div class="mx-auto max-w-6xl px-6 lg:px-8">
+                <div class="grid gap-12 lg:grid-cols-2 lg:items-start">
+                    <div class="space-y-4">
+                        <p class="text-sm font-semibold uppercase tracking-[0.3em] text-brand">Download &amp; availability</p>
+                        <h2 class="text-3xl font-bold text-slate-900">XML-Director 2.0 is ready for production.</h2>
+                        <p class="text-slate-600">Install from PyPI, configure through the web, and benefit from the same production setup already running at multiple customers.</p>
+                        <ul class="space-y-2 text-slate-600">
+                            <li>Through-the-web configurable XML content types.</li>
+                            <li>XSLT registry and validator registry (XML Schema, DTD, Relax NG, Schematron).</li>
+                            <li>PDF generation pipelines and DOCX-to-XML conversions.</li>
+                            <li>C-REX integration and LibreOffice/OpenOffice conversion options.</li>
+                        </ul>
+                        <p class="text-slate-600">Latest release: <a href="https://pypi.python.org/pypi/xmldirector.plonecore" class="font-semibold text-brand">xmldirector.plonecore on PyPI</a></p>
+                        <p class="text-slate-600">Installation docs: <a href="https://pythonhosted.org/xmldirector.plonecore/README.html#installation" class="font-semibold text-brand">How to install</a> · <a href="https://pythonhosted.org/xmldirector.plonecore/demo.html#demo-installation" class="font-semibold text-brand">Demo setup</a></p>
+                    </div>
+                    <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-xl">
+                        <h3 class="text-2xl font-semibold text-slate-900">Stay informed</h3>
+                        <p class="mt-2 text-slate-600">Subscribe to the XML-Director newsletter for release news and tutorial videos.</p>
+                        <form action="https://produce-and-pbulish.us9.list-manage.com/subscribe/post?u=4a0f51cad795658159ee11f39&amp;id=85754d15f7" method="post" target="_blank" class="mt-6 space-y-4">
+                            <label class="text-sm font-medium text-slate-700" for="newsletter-email">Email address</label>
+                            <input type="email" id="newsletter-email" name="EMAIL" required class="block w-full rounded-2xl border-slate-300 bg-slate-50 px-4 py-3 text-slate-900 focus:border-brand focus:ring-brand" placeholder="you@example.com">
+                            <input type="text" name="b_4a0f51cad795658159ee11f39_85754d15f7" tabindex="-1" value="" hidden>
+                            <button type="submit" class="w-full rounded-2xl bg-brand px-6 py-3 font-semibold text-white shadow-lg shadow-brand/30 transition hover:bg-brand-dark">Subscribe</button>
+                        </form>
+                        <p class="mt-4 text-sm text-slate-500">Past issues live in the <a href="http://us9.campaign-archive1.com/home/?u=4a0f51cad795658159ee11f39&amp;id=85754d15f7" class="font-semibold text-brand">newsletter archive</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="developer" class="border-y border-slate-200 bg-white py-20">
+            <div class="mx-auto max-w-6xl px-6 lg:px-8">
+                <div class="grid gap-12 lg:grid-cols-2">
+                    <div>
+                        <p class="text-sm font-semibold uppercase tracking-[0.3em] text-brand">Developer model</p>
+                        <h2 class="text-3xl font-bold text-slate-900">Open, tested, and documented.</h2>
+                        <p class="mt-4 text-slate-600">XML-Director lives on GitHub under the GPL (v2). We strive for clean code, automated tests, and complete documentation.</p>
+                        <ul class="mt-4 space-y-2 text-slate-600">
+                            <li><a href="https://github.com/xml-director" class="font-semibold text-brand">Repositories on GitHub</a></li>
+                            <li><a href="https://travis-ci.org/xml-director/xmldirector.plonecore" class="font-semibold text-brand">Travis CI status</a></li>
+                            <li><a href="https://groups.google.com/forum/#!forum/xml-director" class="font-semibold text-brand">Mailing list</a></li>
+                            <li><a href="http://pythonhosted.org/xmldirector.plonecore" class="font-semibold text-brand">Developer documentation</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="rounded-3xl border border-slate-200 bg-slate-900 p-8 text-white shadow-xl">
+                            <h3 class="text-2xl font-semibold">Demo & Docker image</h3>
+                            <p class="mt-2 text-white/80">Spin up a local instance or explore the hosted demo.</p>
+                            <div class="mt-4 rounded-2xl bg-black/40 p-4 font-mono text-sm">docker run -p 12020:12020 zopyx/xmldirector-plone</div>
+                            <p class="mt-3 text-white/80">Then browse to <a href="http://localhost:12020/xml-director" class="underline">http://localhost:12020/xml-director</a> and log in with <span class="font-semibold">demo / demo</span>.</p>
+                            <p class="mt-4 text-white/80">Hosted demo: <a href="http://demo.xml-director.info/xml-director" class="underline">demo.xml-director.info</a></p>
+                            <h4 class="mt-6 text-xl font-semibold text-white">Contribute</h4>
+                            <p class="text-white/80">Submit pull requests, co-fund features, or share integration components.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="partners" class="py-20">
+            <div class="mx-auto max-w-6xl px-6 lg:px-8">
+                <div class="mb-12 space-y-4 text-center">
+                    <p class="text-sm font-semibold uppercase tracking-[0.3em] text-brand">Partners &amp; providers</p>
+                    <h2 class="text-3xl font-bold text-slate-900">People and technology we collaborate with</h2>
+                </div>
+                <div class="grid gap-6 lg:grid-cols-2">
+                    <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                        <h3 class="text-2xl font-semibold text-slate-900">Practice Innovation</h3>
+                        <p class="mt-3 text-slate-600">Germany-based experts for technical documentation, DITA projects, and DOCX↔XML conversions. They provide C-Rex.net as a DOCX conversion web service.</p>
+                        <p class="mt-3 text-sm text-slate-500"><a href="http://practice-innovation.de" class="font-semibold text-brand">practice-innovation.de</a> · <a href="https://c-rex.net" class="font-semibold text-brand">c-rex.net</a></p>
+                    </article>
+                    <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                        <h3 class="text-2xl font-semibold text-slate-900">Ute Mitschke</h3>
+                        <p class="mt-3 text-slate-600">Consultant and FrameMaker expert supporting enterprise XML migrations across Germany.</p>
+                        <p class="mt-3 text-sm text-slate-500"><a href="http://www.ute-mitschke.de" class="font-semibold text-brand">ute-mitschke.de</a></p>
+                    </article>
+                </div>
+                <div class="mt-12 rounded-3xl border border-slate-200 bg-white">
+                    <div class="divide-y divide-slate-200" id="technology-accordion" data-accordion="collapse">
+                        <h3>
+                            <button type="button" class="flex w-full items-center justify-between px-6 py-4 text-left text-lg font-semibold" data-accordion-target="#tech-body-1" aria-expanded="true" aria-controls="tech-body-1">
+                                Technology providers
+                                <svg data-accordion-icon class="h-5 w-5 transition" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                                </svg>
+                            </button>
+                        </h3>
+                        <div id="tech-body-1" class="px-6 py-4" aria-labelledby="tech-heading-1">
+                            <div class="grid gap-4 md:grid-cols-2">
+                                <div>
+                                    <h4 class="font-semibold text-slate-900">Bookalope</h4>
+                                    <p class="text-sm text-slate-600">Document analysis and conversion service for ebook, PDF, and InDesign workflows.</p>
+                                    <a href="http://bookalope.net" class="text-sm font-semibold text-brand">bookalope.net</a>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-slate-900">PrinceXML</h4>
+                                    <p class="text-sm text-slate-600">CSS-based PDF generator used across our high-end publishing projects.</p>
+                                    <a href="http://princexml.com" class="text-sm font-semibold text-brand">princexml.com</a>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-slate-900">PDFreactor</h4>
+                                    <p class="text-sm text-slate-600">Primary PDF renderer with robust documentation and JavaScript support.</p>
+                                    <a href="http://pdfreactor.com" class="text-sm font-semibold text-brand">pdfreactor.com</a>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-slate-900">Antennahouse</h4>
+                                    <p class="text-sm text-slate-600">High-end typesetting for advanced publications via XSL-FO or CSS.</p>
+                                    <a href="http://antennahouse.com" class="text-sm font-semibold text-brand">antennahouse.com</a>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-slate-900">Vivliostyle</h4>
+                                    <p class="text-sm text-slate-600">CSS Paged Media publishing leveraging modern browser engines.</p>
+                                    <a href="http://vivliostyle.com" class="text-sm font-semibold text-brand">vivliostyle.com</a>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-slate-900">print-css.rocks</h4>
+                                    <p class="text-sm text-slate-600">Test lab where we benchmark PDF tools and share results.</p>
+                                    <a href="https://print-css.rocks" class="text-sm font-semibold text-brand">print-css.rocks</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-				</div>
-			</div>
-		</section>
-		<section id="overview">
-			<div class="container">
-				<div class="row divide">
-					<div class="col-sm-4">
-						<div class="thumbnail">
-                            <img class="img-responsive" src="assets/docx2xml.png" alt="DOCX to XML" />
-							<div class="caption">
-								<h3>DOCX to XML Conversion</h3>
-								<h4>Import and convert DOCX &rarr; XML &rarr; DOCX</h4>
-								<p class="hyphenate">
-                                Seamless import of DOCX content into our XML
-                                CMS and conversion to XML. We support
-                                conversion of Docbook DTD and DITA
-                                out-of-the-box. DOCX documents using
-                                stylesheets can be converted to XML/HTML using
-                                a custom DOCX conversion and back to DOCX. We
-                                are generally able to support any custom DTD or
-                                XML schema as part of a customer-specific
-                                configuration.
-                                </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="thumbnail">
-                            <img class="img-responsive" src="assets/xml-workflows.png" alt="XML Workflows" />
-							<div class="caption">
-								<h3>XML Publication Workflows</h3>
-								<h4>Single-source multi-channel publishing</h4>
-								<p class="hyphenate">
-                                XML-Director allows you to manage the complete XML workflow through a unified web interface, from upload and conversion to
-                                quality control, publication and distribution. Individual XML workflows can
-                                be assigned to single documents or document collections. Fine-grained access control allows you to define
-                                who can access and edit content.
-                                </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="thumbnail">
-                            <img class="img-responsive" src="assets/pdf-layouts.png" alt="PDF Layouts" />
-							<div class="caption">
-								<h3>High-Quality PDF Layouts</h3>
-								<h4>PDF generation for print-ready documents</h4>
-								<p class="hyphenate">
-                                XML-Director supports multiple PDF converters to generate high-quality PDF documents from your XML
-                                content. We support layout-oriented
-                                documents like brochures as well as traditional print products with texts and images. Custom styles 
-								for your corporate identity or content branding can be added and
-                                controlled easily through CSS (Cascading Style Sheets).
-                                </p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	<!--start works header-->
-		<div id="works-top" data-bottom-top="background-position: 50% -150px;" data-top-bottom="background-position: 50% 50px;">
-			<h1 class="header">Features</h1>
-			<p class="header">How awesome is it?</p>
-		</div>
-	<!--start works-->
-		<section id="works">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-4 feature-images">
-                        <img class="img-responsive feature-image" src="assets/usecases.png" alt="Usecases for XML-Director"/>
-					</div>
-					<div class="col-sm-8 ">
-                        <h1>Use Cases</h1>
-
-                        <p class="hyphenate">XML-Director provides a simple and unified user interface for those using 
-						XML publishing workflows. XML-Director can be used for technical documentation and for the authoring and
-                        production of guidelines, quality assurance documentation, SOP and more. Manage your content in Word (DOCX)
-                        including all the necessary styling such as paragraph and inline styles.</p>
-
-                        <ul class="one-column">
-                          <li>conversion of DOCX &rarr; XML &rarr; DOCX (DOCX-XML round tripping)</li>
-                          <li>conversion of XML to HTML/Web, PDF and EPub</li>
-                          <li>publication and distribution of generated content</li>
-                        </ul>
-                        <h4>XML-Director can be used for various usecases</h4>
-                        <ul class="one-column">
-                            <li>Fiction</li>
-                            <li>Manuals</li>
-                            <li>Technical documentation</li>
-                            <li>Technical literature</li>
-                            <li>&hellip;</li>
-                        </ul>
-					</div>
-				</div>
-                <hr/>
-				<div class="row ">
-					<div class="col-sm-8 ">
-                        <h1>Unified XML Workflow</h1>
-
-                        <p class="hyphenate">The goal of XML-Director is to unify the XML workflow under one umbrella. Our
-                        solution can be used to:</p>
-                        <ul class="one-column">
-                          <li>upload manuscripts into the content management system</li>
-                          <li>convert manuscripts to XML</li>
-                          <li>generate PDF and EPub</li>
-                          <li>publish to the web or other distribution channels</li>
-                        </ul>
-                        <p class="hyphentate">
-                        It is of course possible to version and archive all content on request.
-                        </p>
-                        <p class="hyphenate">XML-Director provides a unified user interface that manages all
-                        aspects and all functionality through the web.
-                        </p>
-					</div>
-					<div class="col-sm-4 feature-images">
-                        <img class="img-responsive feature-image" src="assets/unified-xml-workflows.png" alt="Unified XML workflows" />
-					</div>
-				</div>
-                <hr/>
-				<div class="row ">
-					<div class="col-sm-4">
-                        <img class="img-responsive feature-image" src="assets/docx2xml.png" alt="DOCX to XML conversion"/>
-					</div>
-					<div class="col-sm-8 ">
-						<h1>DOCX &rarr; XML &rarr; DOCX Conversion</h1>
-						<h4>Import your office content and convert it on the fly to XML</h4>
-                            <p class="hyphenate">XML-Director provides support for the conversion of DOCX content to
-                            XML. We support the conversion of standard DOCX to Docbook and DITA XML. We also support the conversion of 
-							DOCX content with custom templates.
-                            to custom XML schema and DTDs. As part of the DOCX to XML conversion workflow, we
-                            also generate HTML for displaying the content on the web or as preparation for later conversion to EPUB. The DOCX → XML
-                            conversion is enabled by the <a href="http://www.c-rex.net/">C-REX</a> conversion service.
-                            Our conversion workflow allow supports XML round tripping for re-generating DOCX from a converted XML document.
-                            </p>
-                            <p class="hyphenate">The open architecture of XML-Director makes it easy to integrate other conversion services
-                            or data import sources. Open-source converter tools like Open-Office/Libre-Office can be linked to using the
-                            Produce &amp; Publish conversion server and the open-source conversion tool <i>unoconv</i>.
-					</div>
-				</div>
-				<hr>
-				<div class="row ">
-					<div class="col-sm-8 ">
-						<h1>PDF Generation</h1>
-						<h4>High-quality PDF generation and impressive page layouts</h4>
-                        <p class="hyphenate">XML-Director supports the generation of high-quality documents. The PDF quality
-                        is comparable to the quality of documents generated with tools like Adobe Indesign or TeX/LaTeX. XML-Director can
-                        produce traditional print products like texts with photos as well as more layout-oriented publications like
-                        brochures.</p>
-
-                        <ul class="three-columns">
-                          <li>High-quality PDF generation</li>
-                          <li>Styling through CSS</li>
-                          <li>fully compliant PDF/A-1a, PDF/A-3a generation</li>
-                          <li>Tagged PDF</li>
-                          <li>CMYK/RGB color space</li>
-                          <li>SVG</li>
-                          <li>Barcodes, QR codes</li>
-                          <li>MathML</li>
-                          <li>Truetype and Opentype fonts</li>
-                          <li>PDF forms</li>
-                          <li>Bidirectional texts</li>
-                          <li>Raster Image Processor</li>
-                          <li>Printer Marks</li>
-                          <li>Multi-lingual documents and hyphenation</li>
-                          <li>Multi-page tables</li>
-                          <li>Footnotes, headers, footers</li>
-                          <li>PDF metadata, PDF comments</li>
-                        </ul>
-
-                        <p class="hyphenate">XML-Director supports a variety of high-quality PDF converters like <a href=
-                        "http://www.pdfreactor.com">PDFreactor</a>, <a href="http://princexml.com">PrinceXML</a>, <a href=
-                        "http://antennahouse.com">Antennahouse Formatter</a> or <a href="http://speedata.de/publisher">Speedata
-                        Publisher</a> and provides you with the best converter option based on your project requirements.
-                        </p>
-                        <p class="hyphenate">The styling of a layout is accomplished solely using CSS (CSS Paged Media Standard). 
-                        You do not need to learn XSL-FO or other complex layout languages or tools - knowledge in CSS is sufficient
-                        for creating a great-looking layout.
-                        </p>
-					</div>
-					<div class="col-sm-4 feature-images">
-                        <img class="img-responsive feature-image"  src="assets/claim-pdf-layouts.png" alt="PDF Layouts"/>
-					</div>
-				</div>
-				<hr>
-				<div class="row ">
-					<div class="col-sm-4 feature-images">
-                        <img class="img-responsive feature-image"  id="plone-logo" src="assets/plone-logo.svg" alt="Plone Logo"/>
-                        <img class="img-responsive feature-image"  id="plone-screenshot" src="assets/plone-5-screen.png" alt="Plone 5 Screenshot"/>
-					</div>
-					<div class="col-sm-8 ">
-						<h1>Enterprise CMS Plone</h1>
-						<h4>Plone is very secure and has a fine-grained security model</h4>
-                        <p class="hyphenate">XML-Director uses the enterprise CMS Plone. Plone is a classical web
-                        content management system that we extended to support the storage of content in eXist-db. Plone also provides the
-                        unified user interface for XML-Director. All workflow actions 
-                        are controlled through the same web interface, from upload to conversion and publication.</p>
-
-                        <p class="hyphenate">The fine-grained access control of
-                        Plone combined with the flexible workflow system gives
-                        you full control over who is able to access and edit
-                        content. XML-Director supports the storage of content
-                        metadata either in Plone, in XML or in a hybrid storage
-                        configured in both Plone and XML.</p>
-
-                        <p class="hyphenate">Your data is safe in Plone. Plone
-                        counts among the most secure content management systems
-                        and has an outstanding security record in comparison to
-                        other CMS solutions. Plone is trusted by large
-                        institutions such as the FBI.</p>
-					</div>
-				</div>
-				<hr>
-				<div class="row ">
-					<div class="col-sm-8 ">
-						<h1>XML Databases and cloud storages</h1>
-						<h4>XML-Director supports eXist-db and BaseX out of the box</h4>
-                        <p class="hyphenate">XML-Director is backed by the
-                        open-source XML database eXist-db.  eXist-db features
-                        support for the most recent XML technologies including
-                        XPath, XQuery, XUpdate, REST, RESTXQ, SOAP, XInclude
-                        and many more. eXist-db is highly scalable and can be
-                        used for small or large collections of documents.</p>
-
-                        <p class="hyphenate">Just as it stores your XML
-                        content, eXist-db can also be used to store all related
-                        assets like images, templates, manuscript files and
-                        generated content like PDF files or EPUB documents.
-                        This unified storage approach dramatically simplifies
-                        content and asset management. Content and assets can be
-                        provided either through the web or accessed directly
-                        through your local computer (since the XML database can
-                        be accessed directly as a network drive).</p>
-                        <p class="hyphenate">In addition XML-Director provides
-                        transparent access to common cloud storages like
-                        Dropbox, Google Drive or Amazon S3. Other storages and
-                        services can be easily integrated using a custom
-                        driver.
-                        </p>
-
-                        <p> See this screencast about the integration of <a
-                        href="https://www.youtube.com/watch?list=PLSipagrPGi4n11gj758e0cUp8Mbqe38uS&v=ZAp-qayJYkA">XML-Director
-                        with Dropbox content.</a>
-                        </p>
-					</div>
-					<div class="col-sm-4 feature-images">
-                        <img class="img-responsive feature-image" id="existdb-logo" src="assets/existdb.svg" alt="ExistDB Logo"/>
-                        <img class="img-responsive feature-image" id="basex-logo" src="assets/basex.svg" alt="BaseX Logo"/>
-					</div>
-				</div>
-                <hr/>
-				<div class="row ">
-					<div class="col-sm-4 feature-images">
-                        <img class="img-responsive img-responsive feature-image" src="assets/openness.png" alt="Openness" />
-					</div>
-					<div class="col-sm-8 ">
-						<h1>Open Platform</h1>
-                        <h4>What openness means for us</h4>
-
-                        <p class="hyphenate">XML-Director is an open platform that can easily integrate with other third-party
-                        systems and applications. XML-Director is built on standards.</p>
-
-                        <p class="hyphenate">XML-Director and almost all of its components are available as open-source (except
-                        for commercial components, customer-specific extensions or code that is protected due to legal issues). The
-                        majority of our components are published in public repositories like <a href="https://github.com">Github</a> or
-                        <a href="http://bitbucket.org">Bitbucket</a> and can be customized by you, by us or by other solution
-                        providers. There is no vendor lock-in. You have access to all code at any time (except for the commercial
-                        converters).</p>
-
-                        <p class="hyphenate">Openness and transparency are key success factors in larger publishing projects. This
-                        includes transparent pricing and customer involvement throughout all phases of the project (agile project development).</p>
-
-					</div>
-				</div>
-                <hr/>
-				<div class="row ">
-					<div class="col-sm-8 ">
-                        <h1>Platform vs. Product</h1>
-                        <h4>We build custom XML solution that fit your needs</h4>
-                        <p class="hyphenate">Twenty years of experience in the publishing business have taught us that every
-                        publisher has their own requirements, in-house publishing workflows and distribution channels. This means that every
-                        project is different.</p>
-
-                        <p class="hyphenate">For this reason, we decided to build an open platform for writing customer-specific XML
-                        publishing solutions on a foundation of core components that can easily be extended and customized. 
-						This avoids the need to develop an overwhelmingly complex XML content management and publishing solution that has no hope of meeting
-                        customers' needs without significant modifications amounting to the reinvention of the wheel.</p>
-
-                        <p class="hyphenate">Our solution employs an open and modular system architecture that is able to integrate with almost all external systems like
-                        shops, databases, distribution channels etc. As well as choosing between several different PDF converters, you have the option to 
-						edit your XML content either through the web or using your favorite XML editor on your local
-                        computer.</p>
-
-					</div>
-					<div class="col-sm-4 feature-images">
-                        <img class="img-responsive feature-image" src="assets/platform.png" alt="Platform" />
-					</div>
-				</div>
-                <hr/>
-				<div class="row ">
-					<div class="col-sm-4 feature-images">
-                        <img class="img-responsive feature-image" src="assets/dita-logo.jpg" alt="DITA" />
-					</div>
-					<div class="col-sm-8 ">
-                        <h1>DITA</h1>
-                        <h4>Document Information Technology Architecture</h4>
-                        <p class="hyphenate">DITA is the de-facto standard for technical documentation.
-                        XML-Director can deal with DITA content in various ways. As storage for XML content you
-                        can directly store and use your DITA topics and maps inside XML-Director.
-                        </p>
-
-                        <p class="hyphenate">With the integration of the C-REX
-                        conversion service we are able to provide you with
-                        state-of-the-art high-quality  conversions from and to
-                        DITA (e.g. from/to DOCX). XML-Director also integrates
-                        standard DITA tools like <em>DITA Open Toolkit</em> or
-                        <em>XMLMind DITA</em>.  </p>                    
-                        <p class="hyphenate">You can edit DITA topics
-                        through-the-web using a WYSIWYG editor.  DITA maps can
-                        be composed using a graphical editor with drag & drop
-                        support.  </p>
-
-					</div>
-				</div>
-                <hr/>
-
-				<div class="row ">
-					<div class="col-sm-8 ">
-                        <h1>Web-to-Print</h1>
-                        <h4>Edit high-quality PDF content directly within the browser</h4>
-                        <p class="hyphenate">
-                        XML-Director also be used as basis for Web-to-Print
-                        applications. The templates in our web-to-print
-                        projects are typically defined through HTML for the
-                        structure and CSS for layout and styling.
-                        </p>
-
-                        <p class="hyphenate">With the integration of the <em>Nimbudocs</em>
-                        editor you can edit directly within the final layout of your publication.
-                        No more form-based Web-to-Print applications. You will see directly how
-                        the final document will look like. Typical usecases are business cards, brochures,
-                        flyers etc. with a middle design and layout complexity.
-                        </p>                    
-
-                        <p class="hyphenate">Check out our <a href="http://web2print.zopyx.com">Web-to-Print demo site</a>
-                        or our <a href="https://www.youtube.com/watch?v=rYoXVM0-BWc">Web-to-Print screencast</a>.
-                        </p>
-
-					</div>
-					<div class="col-sm-4 feature-images">
-                        <img class="img-responsive feature-image" src="assets/web2print.png" alt="Web-to-Print" />
-					</div>
-				</div>
-                <hr/>
-
-
-				<div class="row ">
-                    <div class="col-sm-4 ">
-                        <img class="img-responsive feature-image" src="assets/zoom.png" alt="Features" />
-                    </div>
-                    <div class="col-sm-8 ">
-                        <a name="feature-matrix"></a>
-                        <h1 id="feature-matrix"> Feature Matrix</h1>
-                        <!--
-                        <h4> Existing, upcoming and planned featured of XML-Director</h4>
-                        -->
-                        <table class="table">
-                            <tbody>
-
-                            <tr>
-                              <td><b>Validation</b></td>
-
-                              <td><br></td>
-
-                              <td><br></td>
-                            </tr>
-
-                            <tr>
-                              <td>Schematron</td>
-
-                              <td>supported</td>
-
-                              <td><br></td>
-                            </tr>
-
-                            <tr>
-                              <td>RelaxNG</td>
-
-                              <td>supported<br></td>
-
-                              <td></td>
-                            </tr>
-
-                            <tr>
-                              <td>XML Schema</td>
-
-                              <td>supported<br></td>
-
-                              <td><br></td>
-                            </tr>
-
-                            <tr>
-                              <td>DTD</td>
-
-                              <td>supported<br></td>
-
-                              <td><br></td>
-                            </tr>
-
-                            <tr>
-                              <td><b>Transformations</b></td>
-
-                              <td><br></td>
-
-                              <td><br></td>
-                            </tr>
-
-                            <tr>
-                              <td>XSLT1</td>
-
-                              <td>supported<br></td>
-
-                              <td></td>
-                            </tr>
-
-                            <tr>
-                              <td>XSLT3</td>
-
-                              <td>supported</td>
-
-                              <td><br></td>
-                            </tr>
-
-                            <tr>
-                              <td>XSLT3</td>
-
-                              <td>supported</td>
-
-                              <td><br></td>
-                            </tr>
-
-                            <tr>
-                              <td>Python</td>
-
-                              <td>supported<br></td>
-
-                              <td><br></td>
-                            </tr>
-
-                            <tr>
-                              <td>Multi step transformations (Pipeline)</td>
-
-                              <td>supported<br></td>
-
-                              <td><br></td>
-                            </tr>
-
-                            <tr>
-                              <td><b>Supported databases/storage</b></td>
-
-                              <td><br></td>
-
-                              <td><br></td>
-                            </tr>
-
-                            <tr>
-                              <td>BaseX &ge; 8.2</td>
-
-                              <td>supported</td>
-
-                              <td><br></td>
-                            </tr>
-
-                            <tr>
-                              <td>eXist-db &ge; 2.2</td>
-
-                              <td>supported</td>
-
-                              <td><br></td>
-                            </tr>
-
-                            <tr>
-                              <td>Owncloud</td>
-
-                              <td>supported</td>
-
-                              <td><br></td>
-                            </tr>
-
-                            <tr>
-                              <td>Alfresco</td>
-
-                              <td>supported</td>
-
-                              <td><br></td>
-                            </tr>
-
-                            <tr>
-                              <td>Dropbox</td>
-
-                              <td>supported</td>
-
-                              <td><br></td>
-                            </tr>          
-                            <tr>
-                              <td>Google Drive</td>
-
-                              <td>planned</td>
-
-                              <td><br></td>
-                            </tr>          
-                            <tr>
-                              <td>Amazon S3</td>
-
-                              <td>supported</td>
-
-                              <td><br></td>
-                            </tr>          
-
-                            <tr>
-                              <td>Local filesystem</td>
-
-                              <td>supported</td>
-
-                              <td><br></td>
-                            </tr>
-
-                            <tr>
-                              <td><b>Content-Types</b></td>
-
-                              <td><br></td>
-
-                              <td><br></td>
-                            </tr>
-
-                            <tr>
-                              <td>through-the-web content-types</td>
-                              <td>supported</td>
-
-                              <td>
-                              </td>
-                            </tr>
-
-                            <tr>
-                              <td>programmatic content-types</td>
-
-                              <td>supported<br></td>
-
-                              <td><br></td>
-                            </tr>
-
-                            <tr>
-                              <td><b>Other features</b></td>
-
-                              <td><br></td>
-
-                              <td><br></td>
-                            </tr>
-                            <tr>
-                              <td>Social media integration</td>
-
-                              <td>supported</td>
-
-                              <td>Twitter, Facebook</td>
-                            </tr>
-                            <tr>
-                              <td>workflows per content-type</td>
-
-                              <td>supported</td>
-
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>fine-grained security and roles management</td>
-
-                              <td>supported</td>
-
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Locks (shared)</td>
-
-                              <td>supported</td>
-
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>REST API</td>
-
-                              <td>supported</td>
-
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Locks (exclusive)</td>
-
-                              <td>planned</td>
-
-                              <td>scheduled for version version 3.0</td>
-                            </tr>
-                            <tr>
-                              <td>Versioning</td>
-
-                              <td>supported</td>
-
-                              <td>Application specific implementations</td>
-                            </tr>
-
-                            <tr>
-                              <td>Archiving</td>
-
-                              <td>supported</td>
-
-                              <td>Application specific implementations</td>
-                            </tr>
-
-
-                            </tbody>
-                        </table>
-                    </div>
                 </div>
-
-			</div>
-		</section>
-	<!--start features
-		<section id="features">
-			<div class="container">
-				<div class="row divide">
-					<div class="col-sm-8 col-sm-offset-2 text-center">
-						<div class="myway-icon-features" data-bottom-bottom="stroke-dashoffset: 150px;" data-center-top="stroke-dashoffset: 0px; fill: rgb(0, 140, 186)" data-center-center="fill: rgb(255, 255, 255)">
-							<svg viewBox="0 0 32 32">
-								<use xlink:href="#globe"></use>
-							</svg>
-						</div>
-					</div>
-					<div class="col-sm-8 col-sm-offset-2 text-center">
-						<h1>Svg icons ftw!</h1>
-						<h4>Using Magical Unicorns and JavaScript Rainbows</h4>
-						<p class="hyphenate">Despite the growing popularity of SVG, its time around and excellent browser support, we have a lack of good vector icon approaches. It's time to fill this gap and use SVG as icons in our web projects.</p>
-					</div>
-				</div>
-			</div>
-		</section>-->
-	<!--start gallery header-->
-		<section id="gallery-top-anchor" class="common-banner2" data-bottom-top="background-position: 50% -150px;" data-top-bottom="background-position: 50% 50px;">
-			<h1 class="header">Media</h1>
-			<p class="header">Related videos, Slides etc.</p>
-		</section>
-	<!--start gallery-->
-		<section id="gallery">
-			<div class="container">
-				<div class="row divide">
-					<div class="col-sm-8 col-sm-offset-2 divide-bottom text-center">
-            		    <iframe id="videos" width="700" height="400" src="https://www.youtube.com/embed/videoseries?list=PLSipagrPGi4n11gj758e0cUp8Mbqe38uS" allowfullscreen></iframe>
-					</div>
-				</div>
-			</div>
-		</section>
-	<!--end gallery-->
-		<section id="references">        
-            <div class="common-banner" data-bottom-top="background-position: 50% -150px;" data-top-bottom="background-position: 50% 50px;">
-                <h1 class="header">References</h1>
-			    <p class="header">Customers using our publishing technology</p>
-            </div>       
-        
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12">
-                        <p class="hyphenate">
-                            We are working since almost 20 years in the field of electronic publishing,
-                            content management systems, large web publications, intranets and extranets and
-                            custom software development. Lead developer Andreas Jung worked over the last
-                            20 years for several publishers in Germany and helped to build enterprise-level
-                            applications for customers. In 2008 we started our own publishing toolbox
-                            called <a href="http://www.produce-and-publish.com">Produce &amp; Publish</a>
-                            and delivered superb publishing applications with the focus on high-quality PDF
-                            generation to several customers world wide. Due to privacy and legal reasons we
-                            are not able to publish all references.
-                        </p>
-                        <ul class="references">
-                            <li>
-                                <a href="http://www.york.cuny.edu"><img src="assets/references/york.png" alt="York College"></a> 
-                            </li>
-                            <li>
-                                <a href="https://veit-schiele.de"><img src="assets/references/vs.jpg" alt="Veit Schiele Communications GmbH"></a>
-                            </li>
-                            <li>
-                                <a href="https://www.locandy.com"><img src="assets/references/locandy.png" alt="Locandy"></a> 
-                            </li>
-                            <li>
-                                <a href="http://www.onkopedia-guidelines.info"><img src="assets/references/dgho.png" alt="Deutsche Gesellschaft für Hämatologie und medizinische Onkologie"></a> 
-                            </li>
-                            <li>
-                                <a href="https://www.osha.gov"><img src="assets/references/osha.jpg" alt="OSHA"></a>
-                            </li>
-                        </ul>
-
-                        <ul>
-                            <li>
-                                <a href="https://www.produce-and-publish.com/showcase/references">Complete list of reference related to Produce & Publish and XML-Director </a>
-                            </li>
-                            <li>
-                                <a href="files/Onkopedia-EN.pdf">Onkopedia Casestudy - XML-based publishing with Plone, Exist-DB and XML-Director</a>
-                            </li>
-                            <li>
-                                <a href="files/Onkopedia-DE.pdf">Onkopedia Casestudy - XML-based publishing with Plone, Exist-DB and XML-Director (German)</a>
-                            </li>
-                        </ul>
+            </div>
+        </section>
+        <section id="about" class="border-y border-slate-200 bg-white py-20">
+            <div class="mx-auto max-w-6xl px-6 lg:px-8">
+                <div class="grid gap-12 lg:grid-cols-2">
+                    <div>
+                        <p class="text-sm font-semibold uppercase tracking-[0.3em] text-brand">About XML-Director</p>
+                        <h2 class="text-3xl font-bold text-slate-900">Led by Andreas Jung</h2>
+                        <p class="mt-4 text-slate-600">Andreas has spent two decades delivering publishing and CMS projects across Europe. XML-Director was created to put professional XML tooling within reach—without proprietary lock-in or inflated licensing.</p>
+                        <p class="mt-4 text-slate-600">As head of ZOPYX, he's delivered multilingual EU projects, worked with major publishers, and continually evolves XML-Director based on real customer needs.</p>
+                    </div>
+                    <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+                        <div class="flex items-center gap-4">
+                            <img src="assets/andreasjung-rounded.png" alt="Andreas Jung" class="h-24 w-24 rounded-full border border-white shadow">
+                            <div>
+                                <h3 class="text-2xl font-semibold text-slate-900">Andreas Jung</h3>
+                                <p class="text-slate-600">Developer &amp; Project lead</p>
+                            </div>
+                        </div>
+                        <p class="mt-4 text-slate-600">Andreas Jung / ZOPYX<br>Hundskapfklinge 33<br>72074 Tübingen, Germany<br>P: +49-7071-793376</p>
+                        <div class="mt-4 flex flex-wrap gap-3 text-sm font-semibold text-brand">
+                            <a href="mailto:info@xml-director.info" class="hover:text-brand-dark">info@xml-director.info</a>
+                            <a href="https://www.linkedin.com/in/jungandreas" class="hover:text-brand-dark">LinkedIn</a>
+                            <a href="https://twitter.com/xmldirector" class="hover:text-brand-dark">Twitter</a>
+                            <a href="https://www.youtube.com/playlist?list=PLSipagrPGi4n11gj758e0cUp8Mbqe38uS" class="hover:text-brand-dark">YouTube</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-		<section id="availability">     
-            <div class="common-banner2" data-bottom-top="background-position: 50% -150px;" data-top-bottom="background-position: 50% 50px;">
-                <h1 class="header">Download & Get it</h1>
-            </div>     
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-6">
-                        <h3>Get XML-Director now!</h3>
-                        <h4>Available now!</h4>
-                        <p class="hyphenate">XML-Director Version 2.0 is <a
-                            href="https://pypi.python.org/pypi/xmldirector.plonecore">officially
-                            released</a>.
-                        XML-Director 2.0 is ready for production and used successfully in two customer projects.
-                        </p>
-                        <ul class="one-column">
-                            <li>Through-the-web configurable XML content types</li>
-                            <li>XSLT registry</li>
-                            <li>Validator registry supporting XML schema, DTD, RelaxNG and Schematron</li>
-                            <li>Conversion to PDF</li>
-                            <li>Conversion DOCX to XML</li>
-                            <ul>    
-                                <li>Support for commercial C-REX service</li>
-                                <li>Conversion DOCX to Docbook (using free LibreOffice/OpenOffice)</li>
-                            </ul>
-                        </ul>
-                        <p class="hyphenate">
-                            The most current development version can always be
-                            found <a
-                                href="https://pypi.python.org/pypi/xmldirector.plonecore">here</a>.
-                            Installation instructions can be found <a
-                                href="https://pythonhosted.org/xmldirector.plonecore/README.html#installation">here</a> and 
-                            <a href="https://pythonhosted.org/xmldirector.plonecore/demo.html#demo-installation">here</a>.
-                            See also details about the development process in the <a href="#developer">developer section</a>.
-                        </p>
+    </main>
+    <footer id="contact" class="bg-slate-950 py-16 text-white">
+        <div class="mx-auto max-w-6xl px-6 lg:px-8">
+            <div class="grid gap-12 lg:grid-cols-3">
+                <div>
+                    <a href="#intro" class="flex items-center gap-3">
+                        <img src="assets/xml-director-logo.svg" alt="XML-Director" class="h-12 w-12">
+                        <span class="text-xl font-semibold">XML-Director</span>
+                    </a>
+                    <p class="mt-4 text-sm text-white/70">© 2014–2024 Andreas Jung, ZOPYX. Flowbite brings a modern face to our proven XML CMS stack.</p>
+                    <div class="mt-4 space-x-4 text-sm text-white/80">
+                        <a href="http://zopyx.com/imprint" class="hover:underline">Imprint</a>
+                        <a href="http://zopyx.com/imprint" class="hover:underline">Privacy</a>
                     </div>
-					<div class="col-sm-6">
-                        <h3>&nbsp;</h3>
-                        <h4>You can subscribe to our newsletter in order keep you informed</h4>
-                        <form action=
-                        "https://produce-and-pbulish.us9.list-manage.com/subscribe/post?u=4a0f51cad795658159ee11f39&amp;id=85754d15f7"
-                        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target=
-                        "_blank" novalidate>
-                          <input type="email" value="" name="EMAIL" class="center-block form-control input-lg required email" id=
-                          "mce-EMAIL" placeholder="Enter your email"><br/> <input type="submit" class="btn btn-lg btn-primary" value=
-                          "Subscribe"> <input type="text" name="b_4a0f51cad795658159ee11f39_85754d15f7" tabindex="-1" value="" hidden=
-                          "">
-                        </form>
-
-                        <br/>
-                        Past issues of the XML-Director newsletter can be
-                        found in the <a
-                            href="http://us9.campaign-archive1.com/home/?u=4a0f51cad795658159ee11f39&id=85754d15f7">archive</a>.
-                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold">Links</h3>
+                    <ul class="mt-4 space-y-2 text-sm text-white/80">
+                        <li><a href="https://groups.google.com/forum/#!forum/xml-director" class="hover:underline">Mailing list</a></li>
+                        <li><a href="https://github.com/xml-director" class="hover:underline">GitHub</a></li>
+                        <li><a href="https://travis-ci.org/xml-director/xmldirector.plonecore" class="hover:underline">Travis CI</a></li>
+                        <li><a href="http://us9.campaign-archive1.com/home/?u=4a0f51cad795658159ee11f39&amp;id=85754d15f7" class="hover:underline">Newsletter archive</a></li>
+                        <li><a href="https://groups.google.com/forum/#!forum/xml-director" class="hover:underline">Community forum</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold">Stay connected</h3>
+                    <ul class="mt-4 space-y-2 text-sm text-white/80">
+                        <li><a href="https://twitter.com/xmldirector" class="hover:underline">Twitter @xmlDirector</a></li>
+                        <li><a href="https://www.youtube.com/playlist?list=PLSipagrPGi4n11gj758e0cUp8Mbqe38uS" class="hover:underline">YouTube playlist</a></li>
+                        <li><a href="mailto:info@xml-director.info" class="hover:underline">Send us an email</a></li>
+                        <li><a href="https://groups.google.com/forum/#!forum/xml-director" class="hover:underline">Mailing list</a></li>
+                        <li><a href="https://github.com/xml-director" class="hover:underline">Development updates</a></li>
+                    </ul>
                 </div>
             </div>
-        </section>
-		<section id="developer">
-            <div class="common-banner" data-bottom-top="background-position: 50% -150px;" data-top-bottom="background-position: 50% 50px;">
-                <h1 class="header">Developer</h1>
-			    <p class="header">Development model, development resources</p>
-            </div>   
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-6">
-                        <h3>Development model</h3>
-                        <p class="hyphenate">
-                        XML-Director is being developed as an open-source project. Our code is located on Github.
-                        You are invited to fork the code and contribute to the project through pull requests or
-                        by joining the core team.
-                        </p>
-                        <p class="hyphenate">
-                        The main implementation language is Python 2.7, because XML-Director is based on the Python-based 
-                        content management system Plone. XML-Director is published
-                        under the GNU Public Licence Version (GPL 2).
-                        </p>
-                        <p>
-                        Development goals are 
-                        </p>
-                        <ul class="one-column">
-                            <li>clean code</li>
-                            <li>tested code (100% test coverage)</li>
-                            <li>extensive and up-to-date documentation</li>
-                        </ul>
-                        <h3>Development resources</h3>
-                        <ul class="one-column">
-                            <li>
-                                <a href="https://github.com/xml-director">XML-Director repositories on Github</a>
-                            </li>
-                            <li>
-                                <a href="https://travis.org/xml-director">Travis-CI</a>
-                            </li>
-                            <li>
-                                <a href="https://groups.google.com/forum/#!forum/xml-director">XML-Director mailing list</a>
-                            </li>
-                            <li>
-                                <a href="http://pythonhosted.org/xmldirector.plonecore">Developer documentation</a>
-                            </li>
-                        </ul>
-                    </div>
-					<div class="col-sm-6">
-                        <h3>Demo</h3>
-                        <p class="hyphenate">
-                        The current XML-Director development release is available as a 
-                        <a href="http://www.docker.com">Docker</a> image or the project's demo site 
-                        <a href="http://demo.xml-director.info">demo.xml-director.info</a>
-                        </p>
-                        <h4>Using Docker</h4>
-                        <p class="hyphenate">
-                        First you need to have Docker installed on your system. Then download
-                        and install the XML-Director Docker image using
-                        </p>
-                        <pre>> docker run -p 12020:12020 zopyx/xmldirector-plone </pre>
-                        <p class="hyphenate">
-                         Connect with your browser to http://localhost:12020/xml-director and 
-                         login with username <em>demo</em> and password <em>demo</em>.
-                        </p>
-                        <h4>XML-Director demo site</h4>
-                        <p class="hyphenate">
-                        Connect with your browser to <a href="http://demo.xml-director.info">http://demo.xml-director.info/xml-director</a> and 
-                         login with username <em>demo</em> and password <em>demo</em>.
-                        </p>
-
-                        <h3>How to contribute?</h3>                       
-                        <p class="hyphenate">
-                        XML-Director is an open project and lives and grows
-                        with contributions, funding and third-party support.
-                        There are various way to contribute to the project.
-                        </p>
-                        <ul class="one-column">
-                           <li>Contribute code. Fork the project on Github and
-                           provide improvements or new functionality through
-                           pull requests</li>
-                           <li>Provide funding. If you want to see some feature
-                           you need for yourself then talk to us in order to
-                           implement the required functionality as part of a
-                           paid project.</li>
-                           <li>Contribute your components. You have some cool
-                           functionality that would fit perfectly into the
-                           architecture of XML-Director?  We are always
-                           interested to include professional components.
-                           Please talk to us.  </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-		<section id="partners">        
-            <div class="common-banner" data-bottom-top="background-position: 50% -150px;" data-top-bottom="background-position: 50% 50px;">
-                <h1 class="header">Pa<span style="letter-spacing: 0.011em">rt</span>ners & Technolo<span style="letter-spacing: 0.01em">gy</span> providers</h1>
-			    <p class="header"></p>
-            </div>       
-        
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-6">
-                        <h2>Project and implementation partners</h2>
-                    </div>
-                </div>
-				<div class="row">
-					<div class="col-sm-6">
-                        <h3>Practice Innovation</h3>
-                        <p class="hyphenate">
-                        Practice Innovation is a Germany-based company with focus on 
-                        high-quality XML solutions, in particular in the field of technical
-                        documentation using DITA. Practice Innovation has a
-                        strong expertise in DOCX to XML conversions and
-                        lossless conversions back to DOCX (round-tripping).
-                        Conversion solutions can be provided as a web-service
-                        through <a
-                        href="https://c-rex.net">C-Rex.net</a>.
-                        </p>
-                        <br/>
-                        <br/>
-                        <a href="http://practice-innovation.de">www.practice-innovation.de</a> &bull;
-                        <a href="https://c-rex.net">www.c-rex.net</a>
-                        </p>
-                    </div>
-					<div class="col-sm-6">
-                        <p class="hyphenate">
-                        <h3>Ute Mitschke</h3>
-                        <p class="hyphenate">
-                        Ute Mitschke is a well-known Germany-based XML
-                        consulant and an expert in Framemaker.
-                        </p>
-                        <br/>
-                        <br/>
-                        <a href="http://www.ute-mitschke.de">www.ute-mitschke.de</a>
-                        </p>
-                    </div>
-                </div>
-				<div class="row">
-					<div class="col-sm-6">
-                        <h2>Technology providers</h2>
-                    </div>
-                </div>
-				<div class="row">
-					<div class="col-sm-4">
-                        <h3>Bookalope</h3>
-                        <p class="hyphenate">
-                        Bookalope is a web service for document analysis and
-                        conversion for XML Workflow Publishing without the
-                        tedious XML exposure. It structures, cleans, and
-                        converts book manuscripts into e-books for Nook, iPad,
-                        or Kindle; into PDF print books; as well as other file
-                        formats for a continued professional editing and design
-                        process using Adobe InDesign or Word.
-                        <br/>
-                        <br/>
-                        <a href="http://bookalope.net">www.bookalope.net</a>
-                        </p>
-                    </div>
-					<div class="col-sm-4">
-                        <h3>PrinceXML</h3>
-                        <p class="hyphenate">
-                        PrinceXML is a high-quality PDF generator accepting XML
-                        and HTML as input. It uses cascading style sheets (CSS)
-                        for defining style and layout. We are experienced with
-                        PrinceXML since almost 10 years and used it for
-                        various challenging publishing projects.
-                        <br/>
-                        <br/>
-                        <a href="http://princexml.com">www.princexml.com</a>
-                        </p>
-                    </div>
-					<div class="col-sm-4">
-                        <h3>PDFReactor</h3>
-                        <p class="hyphenate">
-                        PDFreactor is a high-quality PDF generator accepting XML
-                        and HTML as input. The functionality is very similar to PDFreactor
-                        provides a much better documentation and good Javascript support
-                        for generating dynamic documents based on content and data.
-                        PDFreactor is our main conversion tool in decent project (good price,
-                        good value, good PDF quality).
-                        <br/>
-                        <br/>
-                        <a href="http://pdfreactor.com">www.pdfreactor.com</a>
-                        </p>
-                    </div>
-                </div>
-				<div class="row" style="margin-bottom: 2em">
-					<div class="col-sm-4">
-                        <h3>Antennahouse</h3>
-                        <p class="hyphenate">
-                        Antennahouse is the high-end solution for automatic
-                        typesetting solutions with XML or HTML as input. Antennahouse
-                        can be used with XSL-FO stylesheets or CSS (as with PDFreactor
-                        or PrinceXML). Antennahouse offers the most complete and most
-                        advanced typesetting features needed for very professional publications.
-                        <br/>
-                        <br/>
-                        <a href="http://antennahouse.com">www.antennahouse.com</a>
-                        </p>
-                    </div>
-					<div class="col-sm-4">
-                        <h3>Vivliostyle</h3>
-                        <p class="hyphenate">
-                        Vivliostyle follows the ideas of <em>CSS Paged Media</em>-based publishing.
-                        It is a new product and follows a new implementation approach on existing
-                        browser-based rendering engines like Webkit. However Vivliostyle lacks 
-                        several features that are present in PDFreactor, PrinceXML or Antennahouse.
-                        <br/>
-                        <br/>
-                        <a href="http://vivliostyle.com">www.vivliostyle.com</a>
-                        </p>
-                    </div>
-					<div class="col-sm-4">
-                        <h3>Comparison of tools</h3>
-                        <p class="hyphenate">
-                        Based on our experience we created a dedicated site
-                        <em><a href="https://print-css.rocks">print-css.rocks</a></em>
-                        where we test and compare all existing (professional) PDF generators 
-                        on the market.
-                        <br/>
-                        <br/>
-                        <a href="https://print-css.rocks">www.print-css.rocks</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-	<!--start contact header-->
-		<section id="team-top" data-bottom-top="background-position: 50% -150px;" data-top-bottom="background-position: 50% 50px;">
-			<h1 class="header">About XML-Director</h1>
-			<p class="header">...awesome, we know.</p>
-		</section>
-	<!--start team-->
-		<section id="team">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-4 divide">
-						<div class="thumbnail">
-							<div class="team-img">
-								<img id="andreas-jung" src="assets/andreasjung-rounded.png" alt="">
-								<div class="team-overlay">
-									<div class="myway-icon-team">
-										<a href="https://www.linkedin.com/in/jungandreas" target="_blank">
-											<svg viewBox="0 0 32 32">
-												<use xlink:href="#linkedin"></use>
-											</svg>
-										</a>
-										<a href="https://www.twitter.com/xmldirector" target="_blank">
-											<svg viewBox="0 0 32 32">
-												<use xlink:href="#twitter"></use>
-											</svg>
-										</a>
-										<a href="https://plus.google.com/111750879027382669490" target="_blank">
-											<svg viewBox="0 0 32 32">
-												<use xlink:href="#google-plus"></use>
-											</svg>
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="caption">
-								<h3>Andreas Jung</h3>
-								<h4>Developer, Project Lead</h4>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-4">
-                        <p class="hyphenate">Andreas Jung has twenty years' experience in publishing and content management projects.
-                        As the head of ZOPYX, he has worked in multi-lingual projects for the EU community and as developer and
-                        technical advisor in various projects for publishers in Germany.</p>
-
-                        <p class="hyphenate">The XML-Director project by Andreas Jung was created several years ago in order to
-                        provide publishers with the best possible tools (editors, converters, CMS etc.) for building
-                        efficient and productive publishing solutions based on customer needs and not on vendor constraints. Our
-                        aim is to provide publishing options that can stand alongside major players like Adobe Indesign &amp; friends, but
-                        with more flexibility for a much better price.</p>
-					</div>
-					<div class="col-sm-3 col-sm-offset-1">
-                        <p>
-                        Andreas Jung/ZOPYX<br>
-                        Hundskapfklinge 33<br>
-                        D-72074 Tübingen, Germany<br>
-                        P: +49-7071-793376<br>
-                        </p>
-                        <br/>
-                        <a href="mailto:info@xml-director.info"><img class="social-media" src="assets/geekly/Icons/WebSites/@.png" alt="Send us an Email" title="Send us an Email"/></a>
-                        <p class="lead">You will love our work!</p>
-
-                        <p class="hyphenate">Don't hesitate to send us an e-mail, and we'll arrange a call so that we can get to know
-                        each other. Let us know what problems you're looking to solve. 
-                        
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-6 divide">
-
-                        <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/XMLDirector" data-widget-id="568321774237257728">Tweets by @XMLDirector</a>
-                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-				    </div>
-				</div>
-			</div>
-		</section>
-	<!--start footer-->
-		<section id="footer">
-			<div class="container">
-				<div class="row divide">
-	<!--logo and copyright-->
-					<div class="col-sm-3">
-						<a href="#intro" class="brand"><img class="logo img-responsive" src="assets/xml-director-logo.svg" alt=""></a>
-						<p class="hyphenate"><small>2014-2015 © Andreas Jung, ZOPYX</small></p>
-						<br>
-					</div>
-	<!--footer menu-->
-					<div class="col-sm-6 text-center">
-
-                        <ul class="row" id="social-media">
-                        <!--
-                            <li>
-                                <a href="https://facebook.com/xmldirector"><img class="social-media" src="assets/geekly/Icons/SocialMedia/Facebook.png" alt="Follow us on Facebook" title="Follow us on Facebook"/></a>
-                            </li>
-                        -->
-                            <li>
-                                <a href="https://twitter.com/xmldirector"><img  class="social-media" src="assets/geekly/Icons/SocialMedia/Twitter.png" alt="Follow us on Twitter" title="Follow us on Twitter"/></a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/playlist?list=PLSipagrPGi4n11gj758e0cUp8Mbqe38uS"><img  class="social-media" src="assets/geekly/Icons/SocialMedia/YouTube.png" alt="Follow us on YouTube" title="Follow us on YouTube"/></a>
-                            </li>
-                            <li>
-                                <a href="mailto:info@xml-director.info"><img  class="social-media" src="assets/geekly/Icons/WebSites/@.png" alt="Send us an Email" title="Send us an Email"/></a>
-                            </li>
-                            <li>
-                                <a href="https://groups.google.com/forum/#!forum/xml-director"><img  class="social-media" src="assets/geekly/Icons/WebSites/RSS.png" alt="Mailing list" title="XML-Director mailing list"/></a>
-                            </li>
-                            <!--
-                            <li>
-                                <a href="https://plus.google.com/111750879027382669490/posts"><img  class="social-media" src="assets/geekly/Icons/SocialMedia/Google+.png" alt="Follow us on Google+" title="Follow us on Google+"/></a>
-                            </li>
-                            -->
-                        </ul>
-                    </div>
-					<div class="col-sm-2 col-sm-offset-1">
-						<ul class="one-column">
-							<li><h5>Links</h5></li>
-							<li><a href="https://groups.google.com/forum/#!forum/xml-director">Mailing list</a></li>
-							<li><a href="https://github.com/xml-director">Github</a></li>
-                            <li><a href="https://travis-ci.org/xml-director/xmldirector.plonecore">Travis CI</a></li>
-                            <li><a href="http://us9.campaign-archive1.com/home/?u=4a0f51cad795658159ee11f39&id=85754d15f7">Newsletter archive</a></li>
-							<li><a href="http://zopyx.com/imprint">Imprint</a></li>
-							<li><a href="http://zopyx.com/imprint">Privacy statement</a></li>
-						</ul>
-					</div>
-	<!--link to social networks-->
-				</div>	
-			</div>
-		</section>
-	<!-- end footer -->
-	<!-- start back to top button -->
-		<div class="hidden-xs">
-			<a href="#intro" class="go-top" data-0="opacity: 0;" data-1000="opacity: 1;">Go Top</a>
-		</div>
-	<!-- end back to top button -->
-	<!-- start scripts - IMPORTANT: all scripts except modernizr and html5shiv MUST be loaded after jquery-v.min.js as now -->
-	<!-- jQuery -->
-		<script src="js/jquery.min.js"></script>
-	<!-- main bootstrap js -->
-		<script src="js/bootstrap.min.js"></script>
-	<!-- retina support -->
-		<script src="js/retina.js"></script>
-	<!-- smooth scroll on page -->
-		<script src="js/jquery.scrollto.min.js"></script>
-		<script src="js/jquery.easing.js"></script>
-	<!-- responsive embed videos -->
-		<script src="js/jquery.fitvids.min.js"></script>
-	<!-- custom scrollbar and smooth scroll -->
-		<script src="js/jquery.nicescroll.min.js"></script>
-		<script src="js/smoothscroll.js"></script>
-		<script src="js/jquery.localscroll.min.js"></script>
-	<!-- animated elements -->
-		<script src="js/imagesloaded.min.js"></script>
-		<script src="js/skrollr.js"></script>
-	<!--[if lt IE 9]>
-		<script src="skrollr.ie.js"></script>
-	<![endif]-->
-	<!-- gallery lightbox -->
-		<script src="js/ekko-lightbox.min.js"></script>
-	<!-- background stretch and slide -->
-		<script src="js/jquery.backstretch.min.js"></script>
-	<!-- contact form and google map -->
-		<script src="js/jquery.gmap.min.js"></script>
-		<script src="js/jquery.form.js"></script>
-		<script src="js/jquery.flowuplabels.js"></script>
-	<!-- custom scripts and triggers -->
-		<script src="js/custom.js"></script>
-        <script src="assets/jquery.rss.min.js"></script>
-<!-- Matomo -->
-<script type="text/javascript">
-  var _paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//matomo.zopyx.com/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '4']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<!-- End Matomo Code -->
-
-	</body>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js" defer></script>
+    <!-- Matomo -->
+    <script type="text/javascript">
+      var _paq = window._paq || [];
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//matomo.zopyx.com/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '4']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
+</body>
 </html>
